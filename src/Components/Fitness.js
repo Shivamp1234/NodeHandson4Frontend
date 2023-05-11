@@ -8,7 +8,7 @@ const Fitness = () => {
             alert("User is not authorised to view particular page!!")
         }
         else{
-            const response = await axios.get("http://localhost:5000/api/fitness",{
+            const response = await axios.get("https://login-signup-backend-api.onrender.com/api/fitness",{
                 headers: {
                     'Authorization': "Bearer " + token
                 }

@@ -8,7 +8,7 @@ const Technology = () => {
             alert("User is not authorised to view particular page!!")
         }
         else{
-            const response = await axios.get("http://localhost:5000/api/technology",{
+            const response = await axios.get("https://login-signup-backend-api.onrender.com/api/technology",{
                 headers: {
                     'Authorization': "Bearer " + token
                 }

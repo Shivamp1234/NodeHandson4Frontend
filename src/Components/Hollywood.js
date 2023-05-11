@@ -8,7 +8,7 @@ const Hollywood = () => {
             alert("User is not authorised to view particular page!!")
         }
         else{
-            const response = await axios.get("http://localhost:5000/api/hollywood",{
+            const response = await axios.get("https://login-signup-backend-api.onrender.com/api/hollywood",{
                 headers: {
                     'Authorization': "Bearer " + token
                 }

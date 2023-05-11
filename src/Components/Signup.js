@@ -12,7 +12,7 @@ const Signup = (props) => {
       e.preventDefault();
 
       try{
-        const response = await axios.post("http://localhost:5000/api/register",{
+        const response = await axios.post("https://login-signup-backend-api.onrender.com/api/register",{
           name,phone,email,password
         })
         console.log(response.data);
