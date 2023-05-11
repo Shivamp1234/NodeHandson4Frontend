@@ -14,7 +14,7 @@ html{
     height: 480px;
     width: 400px;
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 35%;
     border: 1px solid rgb(218, 217, 217);
     text-align: center;
@@ -94,4 +94,10 @@ p{
 a{
     color: dodgerblue;
     cursor: pointer;
+}
+.buttons{
+    margin-top: 20px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-around;
 }

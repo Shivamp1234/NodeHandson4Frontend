@@ -8,15 +8,17 @@ const Login = (props) => {
 
   async function submit(e){
       e.preventDefault();
-
       try{
-        await axios.post("http://localhost:5000/api/login",{
+        const response = await axios.post("http://localhost:5000/api/login",{
           email,password
         })
+        const data = response.data;
+        localStorage.setItem('token',data.token);
       }
-      catch(e){
-        console.log(e);
+      catch(error){
+        console.log(error);
       }
+      alert("User logged in Successfully!!")
   }
   return (
     <>

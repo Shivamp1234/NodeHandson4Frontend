@@ -12,13 +12,15 @@ const Signup = (props) => {
       e.preventDefault();
 
       try{
-        await axios.post("http://localhost:5000/api/register",{
+        const response = await axios.post("http://localhost:5000/api/register",{
           name,phone,email,password
         })
+        console.log(response.data);
       }
-      catch(e){
-        console.log(e);
+      catch(error){
+        console.log(error);
       }
+      alert("User Registered Successfully!!");
   }
   return (
     <>
