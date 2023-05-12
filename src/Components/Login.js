@@ -18,7 +18,6 @@ const Login = (props) => {
       catch(error){
         console.log(error);
       }
-      alert("User logged in Successfully!!")
   }
   return (
     <>
